@@ -1,0 +1,6 @@
+.labeljaun{
+    color: red;
+}
+.labeljaun:hover {
+    font-size: 30px;
+}
