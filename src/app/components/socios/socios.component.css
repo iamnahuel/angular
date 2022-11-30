@@ -1,6 +1,19 @@
-.labeljaun{
-    color: red;
+.containerSocios {
+    background-color:  #f39608;
+    padding: 10px;
 }
-.labeljaun:hover {
-    font-size: 30px;
+
+.titulo {
+    color: #003290;
+    text-align: center;
+}
+
+.table {
+    width: 90%;
+}
+
+.tabla {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
