@@ -1,3 +1,31 @@
+.titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: white;
+}
+.textoId{
+    
+    color: yellow;
+}
+.datosPerfil {
+    display: flex;
+}
+.tipoSocio {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+.nombre {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: yellow;
+}
+
+.imgPerfil {
+    height: 80px;
+    border-radius: 100%;
+
+}
 .menu{
    
         display: flex;

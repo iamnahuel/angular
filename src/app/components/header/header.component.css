@@ -1,3 +1,19 @@
-.clase-ejemplo{
-    background-color: red;
+
+.header {
+    background-color: #003290;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 15px;
+}
+
+.logoEncabezado {
+    width: 70px;
+    margin-left: 15px;
+}
+
+.textoEncabezado {
+    width: 300px;
+    margin-left: 15px;
+
 }

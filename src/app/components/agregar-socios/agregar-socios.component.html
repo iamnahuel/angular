@@ -1,0 +1,69 @@
+<div class="contenedorAgregarSocio">
+    <div class="col-md-9">
+        <label class="infoFormulario">Para formar parte, necesitamos validar tu identidad. Por favor, completá los
+            siguientes datos:</label>
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+            <div class="form-row formularios">
+                <div class="form-group col-12">
+                    <p class="oIcompleto"></p>
+                    <label for="inputNombre">Nombre</label>
+                    <input type="text" class="form-control" placeholder="Nombre" [formControl]="firstNameControl" />
+                    <app-error-helper [control]="firstNameControl"></app-error-helper>
+                </div>
+                <div class="form-group col-12">
+                    <label for="inputApellido">Apellido</label>
+                    <input type="text" class="form-control" id="inputApellido" placeholder="Apellido" onInput=""
+                        [formControl]="lastNameControl" />
+                    <app-error-helper [control]="lastNameControl"></app-error-helper>
+                </div>
+                <div class="form-group col-12">
+                    <label for="inputDocumento">Documento</label>
+                    <input type="number" class="form-control" id="inputDocumento" placeholder="Documento" onInput=""
+                        [formControl]="dniControl" />
+                    <app-error-helper [control]="dniControl"></app-error-helper>
+                </div>
+                <div class="form-group col-12">
+                    <label for="inputTipoSocio">Tipo Socio</label>
+                    <select id="inputTipoSocioSelect" class="form-control"  [formControl]="tiposocioControl">
+                        <option value="Simple">Simple</option>
+                        <option value="Pleno">Pleno</option>
+                    </select>
+                    <app-error-helper [control]="tiposocioControl"></app-error-helper>
+                </div>
+                <div class="form-group col-12 campoCompartido">
+                    <div class="col-6 inputCel">
+                        <label for="inputCel">Cel</label>
+                        <input type="number" class="form-control" placeholder="Celular"
+                        [formControl]="celControl" />
+                        <app-error-helper [control]="celControl"></app-error-helper>
+                    </div>
+                    <div class="col-6">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" onInput=""
+                            [formControl]="emailControl" />
+                        <app-error-helper [control]="emailControl"></app-error-helper>
+                    </div>
+                </div>
+                <div class="form-group col-12 campoCompartido">
+                    <div class="form-group col-6 inputDireccion">
+                        <label for="inputAddress">Direccion</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Direccion" onInput=""
+                        [formControl]="streetNameControl" />
+                        <app-error-helper [control]="streetNameControl"></app-error-helper>
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="inputCity">Ciudad</label>
+                        <input type="text" class="form-control" id="inputCity" placeholder="Ciudad" onInput=""
+                        [formControl]="countryControl" />
+                        <app-error-helper [control]="countryControl"></app-error-helper>
+                    </div>
+                </div>
+
+            </div>
+            <button  [disabled]="registerForm.invalid" type="submit" class="btn btn-primary col-12">CONTINUAR</button>
+        </form>
+
+    </div>
+
+
+</div>
